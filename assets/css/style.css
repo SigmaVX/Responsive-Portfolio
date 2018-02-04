@@ -120,6 +120,10 @@ footer p {
     padding: 25px;
 }
 
+.bigbox h2{
+    margin-bottom: 10px;
+}
+
 .linkbox {
     width: 270px;
     display: inline-block;
@@ -190,11 +194,12 @@ footer p {
 }
 
 /* adjustments for screens less than 980px */
-@media only screen and (max-width: 980px){
+@media only screen and (min-width : 769px) and (max-width : 980px){
     header h1 {
         padding: 19px;
         width: 50%;
         margin-left: 5%;
+        background-color: blue;
     }
     
     nav {
@@ -222,11 +227,6 @@ footer p {
         padding: 15px;
     }
     
-    .bigbox h2{
-        margin-bottom: 10px;
-    }
-
-
     .mainbody, footer {
         width: 100%;
         float: none;
@@ -258,12 +258,12 @@ footer p {
 } 
 
 /* adjustments for screens less than 768px */
-@media only screen and (max-width: 768px){
-
+@media only screen and (min-width : 641px) and (max-width : 768px){
     header h1 {
         padding: 19px;
         width: 50%;
-        margin-left: 5%;
+        margin-left: 4%;
+        background-color: red;
     }
     
     nav {
@@ -288,7 +288,7 @@ footer p {
     .bigbox {
         width: 87%;
         margin: 5px 4%;
-        clear: both;
+        display: inline-block
         background-color: #ffffff;
         border: 2px solid #dddddd;
         padding: 15px;
@@ -306,15 +306,19 @@ footer p {
         margin: 15px auto;
         border: 2px solid #dddddd;
         float: none;
-        clear: both;
         display: block;
         position: static;
     }
     
     .port-img {
-        margin-left: 7%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 8%;
+        margin-bottom: 15px;
+        float: left;
     }
-    
+
     #about-img {
         float: left;
         width: 40%;
@@ -332,11 +336,12 @@ footer p {
 /* adjustments for screens less than 640px */
 @media only screen and (max-width: 640px){
 
-    header {
+    /* header {
         position: fixed;
         top: 0;
         width: 100%;
-    }
+        background-color: green;
+    } */
 
     nav {   
         display: block;
@@ -404,9 +409,21 @@ footer p {
         float: none;
     }
 
-    .portfolio p {
-        width: 250px;
+    .port-img img{
+        width: 95%;
+        margin: 0%;
+    }
 
+    .portfolio p {
+        width: 100%;
+    }
+
+    .image-wrap {
+        position: absolute;
+        top: 80%;
+        left: 0px;
+        z-index: 1;
+        width: 95%;
     }
 
     #about-img {
