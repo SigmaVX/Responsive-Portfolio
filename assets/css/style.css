@@ -199,7 +199,6 @@ footer p {
         padding: 19px;
         width: 50%;
         margin-left: 5%;
-        background-color: blue;
     }
     
     nav {
@@ -258,12 +257,11 @@ footer p {
 } 
 
 /* adjustments for screens less than 768px */
-@media only screen and (min-width : 641px) and (max-width : 768px){
+@media only screen and (min-width : 641px) and (max-width : 768px) {
     header h1 {
         padding: 19px;
         width: 50%;
         margin-left: 4%;
-        background-color: red;
     }
     
     nav {
@@ -334,15 +332,8 @@ footer p {
 
 
 /* adjustments for screens less than 640px */
-@media only screen and (max-width: 640px){
-
-    /* header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: green;
-    } */
-
+@media only screen and (max-width: 640px) {
+  
     nav {   
         display: block;
         float: none;
@@ -351,9 +342,12 @@ footer p {
         margin: 0 auto;
         border-bottom: 2px solid #cccccc;
     }
-
+    
     header {
         padding: 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     header h1 {
